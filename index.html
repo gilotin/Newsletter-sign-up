@@ -20,24 +20,45 @@
     <body>
         <main>
             <section>
-                <div>
+                <div class="wrapper">
                     <img
                         src="./assets/images/illustration-sign-up-mobile.svg"
                         alt="board with graphs and statistics"
                     />
                 </div>
-                <div>
-                    Stay updated Join 60,000+ product managers receiving monthly updates on: Product
-                    discovery and building what matters Measuring to ensure updates are a success
-                    And much more! Email address email@company.com Subscribe to monthly newsletter
-                </div>
+                <section id="subscribe-card" class="subscribe-card wrapper">
+                    <h1>Stay updated</h1>
+                    <p>Join 60,000+ product managers receiving monthly updates on:</p>
+                    <ul>
+                        <li class="features">Product discovery and building what matters</li>
+                        <li class="features">Measuring to ensure updates are a success</li>
+                        <li class="features">And much more!</li>
+                    </ul>
+                    <form form action="/submit-form" method="POST">
+                        <div>
+                            <label for="email">Email address</label>
+                            <span id="eail-error">Valid email required</span>
+                        </div>
+                        <input
+                            name="email"
+                            id="email"
+                            type="email"
+                            placeholder="email@company.com"
+                            required
+                        />
+                        <button type="submit">Subscribe to monthly newsletter</button>
+                    </form>
+                </section>
             </section>
 
-            <section>
+            <section class="success-card wrapper">
                 <img src="./assets/images/icon-success.svg" alt="success check sign" />
-                Thanks for subscribing! A confirmation email has been sent to ash@loremcompany.com.
-                Please open it and click the button inside to confirm your subscription. Dismiss
-                message
+                <h2>Thanks for subscribing!</h2>
+                <p>
+                    A confirmation email has been sent to ash@loremcompany.com. Please open it and
+                    click the button inside to confirm your subscription.
+                </p>
+                <button type="button">Dismiss message</button>
             </section>
         </main>
         <script src="logic.js"></script>
