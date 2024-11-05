@@ -20,38 +20,53 @@
     <body>
         <main>
             <section>
-                <div class="wrapper">
+                <div class="hero__image">
                     <img
                         src="./assets/images/illustration-sign-up-mobile.svg"
                         alt="board with graphs and statistics"
                     />
                 </div>
                 <section id="subscribe-card" class="subscribe-card wrapper">
-                    <h1>Stay updated</h1>
-                    <p>Join 60,000+ product managers receiving monthly updates on:</p>
-                    <ul>
-                        <li class="features">Product discovery and building what matters</li>
-                        <li class="features">Measuring to ensure updates are a success</li>
-                        <li class="features">And much more!</li>
+                    <h1 class="subscribe-card__header">Stay updated!</h1>
+                    <p class="subscribe-card__description">
+                        Join 60,000+ product managers receiving monthly updates on:
+                    </p>
+                    <ul class="subscribe-card__list">
+                        <li class="subscribe-card__list-features">
+                            <img src="./assets/images/icon-list.svg" alt="check tick" />
+                            <p>Product discovery and building what matters</p>
+                        </li>
+                        <li class="subscribe-card__list-features">
+                            <img src="./assets/images/icon-list.svg" alt="check tick" />
+                            <p>Measuring to ensure updates are a success</p>
+                        </li>
+                        <li class="subscribe-card__list-features">
+                            <img src="./assets/images/icon-list.svg" alt="check tick" />
+                            <p>And much more!</p>
+                        </li>
                     </ul>
-                    <form form action="/submit-form" method="POST">
-                        <div>
-                            <label for="email">Email address</label>
-                            <span id="eail-error">Valid email required</span>
+                    <form class="subscribe-card__form" form action="/submit-form" method="POST">
+                        <div class="subscribe-card__form-group">
+                            <label class="subscribe-card__form-label" for="email"
+                                >Email address</label
+                            >
+                            <span class="subscribe-card__form-error">Valid email required</span>
                         </div>
                         <input
+                            class="subscribe-card__form-input"
                             name="email"
                             id="email"
                             type="email"
                             placeholder="email@company.com"
-                            required
                         />
-                        <button type="submit">Subscribe to monthly newsletter</button>
+                        <button class="subscribe-card__form-button" type="submit">
+                            Subscribe to monthly newsletter
+                        </button>
                     </form>
                 </section>
             </section>
 
-            <section class="success-card wrapper">
+            <section class="success-card wrapper hidden">
                 <img src="./assets/images/icon-success.svg" alt="success check sign" />
                 <h2>Thanks for subscribing!</h2>
                 <p>
