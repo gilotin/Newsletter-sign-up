@@ -19,14 +19,23 @@
     </head>
     <body>
         <main>
-            <section>
-                <div class="hero__image">
-                    <img
-                        src="./assets/images/illustration-sign-up-mobile.svg"
-                        alt="board with graphs and statistics"
+            <section class="subscribe-card">
+                <picture>
+                    <source
+                        media="(max-width:1024px)"
+                        srcset="./assets/images/illustration-sign-up-mobile.svg"
                     />
-                </div>
-                <section id="subscribe-card" class="subscribe-card wrapper">
+                    <source
+                        media="(min-width:1024px)"
+                        srcset="./assets/images/illustration-sign-up-desktop.svg"
+                    />
+                    <img
+                        class="subscribe-card__image"
+                        src="./assets/images/illustration-sign-up-desktop.svg"
+                        alt="board with graphs and statistic"
+                    />
+                </picture>
+                <div class="wrapper">
                     <h1 class="subscribe-card__header">Stay updated!</h1>
                     <p class="subscribe-card__description">
                         Join 60,000+ product managers receiving monthly updates on:
@@ -50,7 +59,9 @@
                             <label class="subscribe-card__form-label" for="email"
                                 >Email address</label
                             >
-                            <span class="subscribe-card__form-error">Valid email required</span>
+                            <span class="subscribe-card__form-error hidden"
+                                >Valid email required</span
+                            >
                         </div>
                         <input
                             class="subscribe-card__form-input"
@@ -59,21 +70,26 @@
                             type="email"
                             placeholder="email@company.com"
                         />
-                        <button class="subscribe-card__form-button" type="submit">
+                        <button class="subscribe-card__form-button button" type="submit">
                             Subscribe to monthly newsletter
                         </button>
                     </form>
-                </section>
+                </div>
             </section>
 
             <section class="success-card wrapper hidden">
-                <img src="./assets/images/icon-success.svg" alt="success check sign" />
-                <h2>Thanks for subscribing!</h2>
-                <p>
-                    A confirmation email has been sent to ash@loremcompany.com. Please open it and
-                    click the button inside to confirm your subscription.
+                <img
+                    class="success-card__image"
+                    src="./assets/images/icon-success.svg"
+                    alt="success check sign"
+                />
+                <h2 class="success-card__header">Thanks for subscribing!</h2>
+                <p class="success-card__description">
+                    A confirmation email has been sent to
+                    <span class="success-card__description--bold">ash@loremcompany.com</span>.
+                    Please open it and click the button inside to confirm your subscription.
                 </p>
-                <button type="button">Dismiss message</button>
+                <button class="success-card__button button" type="button">Dismiss message</button>
             </section>
         </main>
         <script src="logic.js"></script>
