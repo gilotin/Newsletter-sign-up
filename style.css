@@ -26,6 +26,7 @@ main {
 
 .hidden {
     display: none !important;
+    /* Using !important for easier change between elements in the same html file. */
 }
 
 
@@ -116,13 +117,10 @@ main {
 .subscribe-card__form-input--error {
     border: 1px solid var(--tomato);
     background-color: var(--tomato-transparent);
-}
-
-
-.subscribe-card__form-input--error::placeholder {
     color: var(--tomato);
-
 }
+
+
 
 .subscribe-card__form-input:hover {
     cursor: pointer;
