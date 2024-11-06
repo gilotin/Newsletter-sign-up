@@ -39,6 +39,9 @@ function errorCheck(email) {
     } else {
         subscribeCard.classList.add("hidden");
         successCard.classList.remove("hidden");
+
+        errorLabel.classList.add("hidden");
+        subscribeCardInput.classList.remove("subscribe-card__form-input--error");
         successCardEmailPlaceholder.textContent = `${email}`;
     }
 }
