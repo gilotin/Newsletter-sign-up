@@ -40,8 +40,8 @@ Users should be able to:
 
 ### Links
 
--   Solution URL: [Frontend Mentor](https://your-solution-url.com)
--   Live Site URL: [Vercel](https://your-live-site-url.com)
+-   Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/newsletter-sign-up-form-with-success-message-WhTF8jxZuj)
+-   Live Site URL: [Vercel](https://newsletter-sign-up-lake-delta.vercel.app/)
 
 ## My process
 
