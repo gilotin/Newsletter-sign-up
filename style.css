@@ -37,13 +37,13 @@ main {
 }
 
 .button {
-    width: 100%;
-    color: var(--white);
     background-color: var(--dark-slate-grey);
-    padding: 1rem 1.5rem;
     border-radius: .6rem;
+    color: var(--white);
     font-weight: 700;
     margin-bottom: 1.5rem;
+    padding: 1rem 1.5rem;
+    width: 100%;
     border: none;
 }
 
@@ -129,16 +129,6 @@ main {
 
 .subscribe-card__form-error {
     color: var(--tomato);
-}
-
-.subscribe-card__form-button {
-    width: 100%;
-    color: var(--white);
-    background-color: var(--dark-slate-grey);
-    padding: 1rem 1.5rem;
-    border-radius: .6rem;
-    font-weight: 700;
-    margin-bottom: 1.5rem;
 }
 
 
